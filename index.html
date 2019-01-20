@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
 </head>
 <body>
 <!--EDIT ALL for P1-->
@@ -55,45 +56,51 @@
         <div class="row">
             <div class="category-image box-image" style="background-image:url('./imgs/sale-category.jpg');"><p>sale</p></div>
             <div class="category-image box-image" style="background-image:url('./imgs/bags-category.jpg');margin: 0 10px;"><p>bags</p></div>
+            <div class="clearfix"></div>
             <div class="category-image wide-image" style="background-image:url('./imgs/womens-category.jpg');"><p>woman's</p></div>
         </div>
     </section>
     
     <!--most love-->
     <section id="swipe">
-        <h3>most-loved <span>product</span></h3>
-        <ul>
-            <li>
+        <div class="most-loved-statement">
+            <h3>most-loved <span>product</span></h3>
+        </div>
+
+        <div class="main-carousel">
+            <div class="carousel-cell">
                 <img src="./imgs/stretch-knit-dress.jpg" alt="dress">
                 <h6>dresses</h6>
                 <p>stetch knit dress</p>
                 <p><span>$169.00</span></p>
                 <button>Add to Cart</button>
-            </li>
-            <li>
-                <img src="./imgs/cotton-blue-shirt.jpg" alt="dress">
+            </div>
+            <div class="carousel-cell">
+                <img src="./imgs/cotton-blue-shirt.jpg" alt="shirt">
                 <h6>shirts</h6>
                 <p>cotton blue shirt</p>
                 <p><span>$89.00</span></p>
                 <button>Add to Cart</button>
-            </li>
-            <li>
-                <img src="./imgs/checked-stretch-dress.jpg" alt="dress">
-                <h6>dresses</h6>
-                <p>checked stretch dress</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="./imgs/demin-overall-shorts.jpg" alt="shorts">
+                <h6>shorts</h6>
+                <p>denim overall shorts</p>
                 <p><span>$129.00</span></p>
                 <button>Add to Cart</button>
-            </li>
-            <li>
-                <img src="./imgs/checked-stretch-dress.jpg" alt="dress">
-                <h6>bags</h6>
-                <p>blue-hipster-bag</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="./imgs/pink-dotted-dress.jpg" alt="dress">
+                <h6>dresses</h6>
+                <p>pink dotted dress</p>
                 <p><span>$69.00</span></p>
                 <button>Add to Cart</button>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section> 
+   
     <!--updated/ocean bkgr-->
+    
     <section id="subscribe">
         <h3>Sign-up for<span>Updates</span></h3>
         <p>
@@ -114,17 +121,24 @@
             <br><p>604-604-6040. info@alohaapparel.com</p><br>
             <p class="address">1490 W Broadway<br>
             Vancouver, BC, Canada </p>
-        <div>
-        <div class="Social">
+        </div>
+        <div class="social">
             <p class="fab fa-facebook-square"> facebook</p>
             <p class="fab fa-twitter-square"> Twitter</p>
             <p class="fab fa-instagram"> Instagram</p>
             <p class="fab fa-pinterest"> Pinterest</p>
             <p class="fab fa-google-plus-g"> google</p>
         </div>
+        <div class="clearfix"></div>
     </footer>
+    
+    <!--j query below above javescript--> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script> 
 
     <!--javascript with links-->
+    <script src="./js/flickity.pkgd.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

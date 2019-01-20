@@ -1,10 +1,84 @@
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair_displaybold_italic';
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*raleway*/
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight_italic';
+    src: url('../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium_italic';
+    src: url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*sample media queries*/
+@media screen and (max-width: 9999px) and (min-width: 1240px){
+
+}
+@media screen and (max-width: 1240px) and (min-width: 600px){
+
+}
+@media screen and (max-width: 600px) and (min-width: 0px){
+
+}
 
 /*CSS Variables*/
 /*CSS EDIT ALL FOR P1*/
 :root {
-    --main-font: 'Raleway Light',;
-    --bold-font: 'Playfair Display', ;
-    --main-color:  #f1eded;
+    --main-font: 'ralewaylight';
+    --bold-font: 'playfair_displayregular';
+    --main-color:  #fff;
     --second-color: #0a0a0a;
     --font-size:16px;
 
@@ -22,17 +96,16 @@ section class="new collection">
 */
 
 
-
 body {
     background-color: var(--main-color);
     font-style: oblique;
-    font-family: var(--main-font)
+    font-family: var(--main-font);
 }
 
 header {
-    font: 17px;
+    font-size: 17px;
     display: block;
-    color: #fff;
+    color: #f00;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -41,9 +114,13 @@ header {
 }
 #logo {
     float:left;
+    margin-top: 5px;
+    margin-left: 40px;
 }
 #cart {
     float:right;
+    margin-top: 10px;
+    margin-right: 40px;
 }
 
 nav ul {
@@ -64,7 +141,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color:#fff;
+    color:#f00;
     text-decoration: none;
 }
 
@@ -82,8 +159,7 @@ nav ul li a{
 }
 
 
-container {
-    padding-top: 50px;
+.container {
     position: relative;
     display: block;
 }
@@ -168,7 +244,7 @@ section {
     color: #fff;
     line-height: 60px;
     text-align: center;
-        padding-top: 60px;
+    padding-top: 60px;
 }
 /*Banner section end*/
 
@@ -216,7 +292,7 @@ section {
     margin: 0;
 }
 .wide-image {
-    width:636px;
+    width:630px;
     height:316px;
 }
 .box-image {
@@ -225,27 +301,86 @@ section {
 }
 /*Categories end*/
 
+/*Swipe*/
 
-/*picture container & picture*/
-.me {
-    width: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    height: 300px;
-    border: 2px solid #fff;
+#swipe {
+    width: 100%;
+    position: relative;
+    min-height: 652px;
 }
-#me {
+#swipe .most-loved-statement{
     width:100%;
+    height:166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 166px;
 }
-/*picture container & picture*/
+.carousel-cell img {
+
+}
+.carousel-cell h6 {
+
+}
+.carousel-cell p {
+    
+}
+.carousel-cell p span  {
+    
+}
+.carousel-cell button{
+    
+}
+
+/*Swipe end*/
+
+/*Subscribe*/
+
+#subscribe {
+    background-image: url(../imgs/wave-bkgd.jpg);
+    background-position: 0% -65%;
+    min-height: 342px;
+    margin-bottom: -12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+/*Subscribe end*/
+
+
 
 footer { 
     display: block;
-    color: #000000;
-    height: 100px;
+    color: var(--main-color);
     width: 100%;
     position: relative;
-    background-color: var(--main-color);
+    background-color: #252525;
+    padding: 62px 35px;
+}
+
+.contact {
+    float: left;
+    color:white; 
+    font-family: var(--main-font);
+}
+.social {
+    float: right;
+}
+.social p {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;    
+    margin: 12px 0;
+}
+
+/*this is a seudo class*/
+.social p::before {
+    margin-right:10px;
+
 }
  
 footer ul li {
@@ -263,3 +398,62 @@ footer ul li a{
 }
 
 
+
+
+
+
+/*mobile styles*/
+@media screen and (max-width: 600px) and (min-width: 0px){
+    /*Categories*/
+    #catagories {
+        position: relative;
+        width:100%;
+        height:auto;
+        display:block;
+    }
+    #catagories .row{
+        width: 100%;
+        height: 404px;
+        display: inline-block;
+        /* flex-direction: unset; */
+        /* justify-content: space-around; */
+        margin: 10px 0;
+    }
+    .category-image {
+        position:relative;
+        background-size: cover;
+    }
+    .category-image p {
+        background-color: rgba(0,0,0,0.2);
+        width:100%;
+        height:100%;
+        position: relative;
+        color:#fff;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .wide-image {
+        width: 100%;
+        height: 197px;
+        margin: 10px 0;
+    }
+    .box-image {
+        width: calc(50% - 5px);
+        height: 197px;
+        display: inline-block;
+        float: left;
+    }
+    .category-image:nth-child(2) {
+        margin: 0 10px 0 0!important;
+    }
+    #catagories .row:nth-child(2) .category-image:nth-child(2) {
+        margin: 0!important;
+    }
+    #catagories .row:nth-child(2) .category-image:nth-child(1) {
+        margin: 0 10px 0 0!important;
+    }
+    /*Categories end*/
+}
