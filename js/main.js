@@ -8,8 +8,8 @@ $(function(){
           event.preventDefault();
 
           // Store hash
-          var hash = this.hash;
-          var off = 0;
+          let hash = this.hash;
+          let off = 0;
 
           if(window.width > 499){
             off = 0;
