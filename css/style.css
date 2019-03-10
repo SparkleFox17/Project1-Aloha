@@ -84,7 +84,7 @@ section class="new collection">
 ==================
 */
 /*mobile styles*/
-@media screen and (max-width: 600px) and (min-width: 0px){
+@media screen and (max-width: 599px) and (min-width: 0px){
     
     header {
         font-size: 14px;
@@ -116,10 +116,11 @@ section class="new collection">
     }
     
     nav ul {
-        width: 427px;
+        width: 100%;
         margin: 0 auto;
         position: relative;
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     
     nav ul li {
@@ -130,6 +131,7 @@ section class="new collection">
         text-align: center;
         line-height: 50px;
         padding: 0px 20px;
+        font-family: var(--main-font);
     }
     
     nav ul li a{
@@ -172,9 +174,10 @@ section class="new collection">
     } 
     
     p {
-        font-size: 14px;
-        margin:20px 0;
-        line-height: 25px;    
+        font-size: 23px;
+        margin: 20px 0px;
+        line-height: 44px;
+        padding: 40px;   
     }
     
     .interests{
@@ -197,6 +200,7 @@ section class="new collection">
         text-decoration: none; 
         font-weight: none; 
         font-family: 'playfair_displayitalic';
+        font-size: 50px;
     }
     
     section h3 span {
@@ -241,7 +245,7 @@ section class="new collection">
         display: flex; 
         justify-content: center;
         flex-direction: column;
-        width: 50%; 
+        width: 70%; 
         height: 500px; 
         margin: auto; 
         color: #fff;
@@ -254,12 +258,13 @@ section class="new collection">
     /*Landing statment*/
     #landing-statement {
         width:100%;
-        height:266px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         min-height: 266px;
+        height: auto;
+        padding: 40px 0;
     }
     /*Landing statment end*/
     
@@ -286,8 +291,7 @@ section class="new collection">
     .carousel-cell {
         line-height: 20px;
         text-align: center;
-    
-    
+        min-width: 100vw;
     }
     .carousel-cell img {
         
@@ -318,6 +322,7 @@ section class="new collection">
     
     #subscribe {
         background-image: url(../imgs/wave-bkgd.jpg);
+        background-size: cover;
         background-position: 0% -65%;
         min-height: 342px;
         margin-bottom: -12px;
@@ -326,21 +331,25 @@ section class="new collection">
         flex-direction: column;
         justify-content: center;
         color: #fff;
+        padding: 20px 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../imgs/wave-bkgd.jpg) 50% 50% / cover no-repeat;
     }
     
     .subscribe-email {
         border-radius: 12px;
-        padding: 5px;
+        padding: 3px;
+        text-align: center;
+        line-height: 4px;
         background-color: white;
-        width: 500px;
+        width: 84%;
         position: relative;
         display: block;
         margin: 0 auto;
-    
+        margin-bottom: 20px;
     }
     
     .subscribe-email input{
-        width: 369px;
+        width: 63%;
         position: relative;
         display: inline-block;
         float: left;
@@ -351,11 +360,11 @@ section class="new collection">
     .subscribe-email button{
         border-radius: 12px;
         padding: 5px;
-        background-color:#e2574c;
-        color:white;
+        background-color: #e2574c;
+        color: white;
         width: 120px;
         position: relative;
-        display: inline-block ;
+        display: inline-block;
         float: left;
     }
     /*Subscribe end*/
@@ -374,17 +383,35 @@ section class="new collection">
     
     .contact {
         float: left;
-        color:white; 
+        color: white;
         font-family: var(--main-font);
+        width: 100%;
     }
+    
+    .contact p {
+        text-align: center;
+        font-size: 14px;
+        margin: 20px 0px;
+        line-height: 30px;
+        padding: 0px;
+    }
+
+    
     .social {
-        float: right;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .social p {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;    
-        margin: 12px 0;
+        display: inline-block;
+        width: auto;
+        margin-bottom: 20px;
+        margin: 2px 0;
+        float: left;
+        padding: 0px;
+    }
+    .social p span{
+        display: none;
     }
     
     /*this is a seudo class*/
@@ -446,6 +473,8 @@ section class="new collection">
         flex-direction: column;
         justify-content: center;
         margin: 0;
+        text-transform: uppercase;
+        font-family: ralewaylight;
     }
     .wide-image {
         width: 100%;
@@ -471,7 +500,7 @@ section class="new collection">
 }
 
 /*tablet styles*/
-@media screen and (max-width: 1240px) and (min-width: 600px) {
+@media screen and (max-width: 1239px) and (min-width: 600px) {
     body {
         background-color: var(--main-color);
         font-family: var(--main-font);
@@ -513,6 +542,8 @@ section class="new collection">
         text-align: center;
         line-height: 50px;
         padding: 0px 20px;
+        font-family: var(--main-font);
+        font-size: 80%;
     }
     
     nav ul li a{
@@ -554,10 +585,10 @@ section class="new collection">
     } 
     
     p {
-        font-size: 23px;
-        margin: 20px 0px;
-        line-height: 44px;
-        padding: 40px;
+        font-size: 15px;
+        margin: 15px 0px;
+        line-height: 34px;
+        padding: 0 15px;
     }
 
      .interests {
@@ -656,12 +687,12 @@ section class="new collection">
         display:block;
     }
     #categories .row{
-        width:100%;
-        height:316px;
+        width: 100%;
+        height: 144px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 20px;
+        justify-content: space-between;
+        margin-bottom: 10px;
     }
     
     .device-only{
@@ -682,17 +713,18 @@ section class="new collection">
         flex-direction: column;
         justify-content: center;
         margin: 0;
-        font-size: 30px;
+        font-size: 24px;
         text-transform: uppercase;
         font-family: ralewaylight;
+        padding: 20px;
     }
     .wide-image {
-        width:637px;
-        height:316px;
+        width: 50%;
+        height: 144px;
     }
     .box-image {
-        width:309px;
-        height:316px;
+        min-width: 144px;
+        height: 144px;
     }
     /*Categories end*/
     
@@ -702,7 +734,7 @@ section class="new collection">
     #swipe {
         width: 100%;
         position: relative;
-        min-height: 652px;
+        min-height: 672px;
     }
     #swipe .most-loved-statement{
         width:100%;
@@ -719,11 +751,11 @@ section class="new collection">
         text-align: center;
         position: absolute;
         left: 53.33%;
-        min-width: 100vw;
+        min-width: 50vw;
     
     }
     .carousel-cell img {
-        
+        max-height: 300px;
     }
     .carousel-cell h6 {
         font-size: 10px;
@@ -733,6 +765,9 @@ section class="new collection">
         text-transform: Capitalize;
         color:#e2574c;
         font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0;
         
     }
     .carousel-cell p span  {
@@ -744,6 +779,9 @@ section class="new collection">
         display:none;
     
     }
+    .flickity-enabled.is-draggable .flickity-viewport {
+        height:430px;
+    }
     
     /*Swipe end*/
     
@@ -752,6 +790,7 @@ section class="new collection">
     #subscribe {
         background-image: url(../imgs/wave-bkgd.jpg);
         background-position: 0% -65%;
+        background-size: 100% 100%;
         min-height: 342px;
         margin-bottom: -12px;
         text-align: center;
@@ -764,13 +803,12 @@ section class="new collection">
     }
     
     .subscribe-email {
-        border-radius: 12px;
-        padding: 5px;
-        background-color: white;
         width: 500px;
         position: relative;
         display: block;
         margin: 0 auto;
+        margin: top;
+        margin-top: 27px;
     
     }
     
@@ -809,17 +847,24 @@ section class="new collection">
     
     .contact {
         float: left;
-        color:white; 
+        color: white;
         font-family: var(--main-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 190px;
     }
     .social {
         float: right;
     }
     .social p {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;    
-        margin: 12px 0;
+         display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin: 3px 0;
+    text-align: left;
+    padding: 5px;
+        
     }
     
     /*this is a seudo class*/
@@ -887,6 +932,7 @@ section class="new collection">
         text-align: center;
         line-height: 50px;
         padding: 0px 20px;
+        font-family: var(--main-font);
     }
     
     nav ul li a{
@@ -1186,7 +1232,7 @@ section class="new collection">
     .social p {
         display: block;
         width: 100%;
-        margin-bottom: 20px;    
+        margin-bottom: 20px;    git
         margin: 12px 0;
     }
     
