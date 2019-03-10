@@ -294,16 +294,20 @@ section class="new collection">
         min-width: 100vw;
     }
     .carousel-cell img {
-        
+     max-height:200px;  
     }
+
     .carousel-cell h6 {
         font-size: 10px;
     
     }
     .carousel-cell p {
         text-transform: Capitalize;
-        color:#e2574c;
+        color: #e2574c;
         font-size: 16px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0;
         
     }
     .carousel-cell p span  {
@@ -800,6 +804,7 @@ section class="new collection">
         color: #fff;
         height: auto;
         padding: 40px 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../imgs/wave-bkgd.jpg) 50% 50% / cover no-repeat;
     }
     
     .subscribe-email {
@@ -1135,7 +1140,7 @@ section class="new collection">
     .carousel-cell {
         line-height: 20px;
         text-align: center;
-    
+        width:calc(100vw / 4);
     
     }
     .carousel-cell img {
