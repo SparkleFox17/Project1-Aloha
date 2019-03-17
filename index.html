@@ -14,16 +14,31 @@
 <!--EDIT ALL for P1-->
 <!--this is my nav below-->
     <header class="container">
-        <a href="#"><img id="logo" src="./imgs/aloha-logo.svg" alt="logo" width="100"></a>  
-        <a href="#"><img id="cart" src="./imgs/cart-icon.svg" alt="cart" width="30"></a>
-        <nav>
+        <div style="display:flex;flex-direction: row;justify-content: space-between;">
+            <a href="#"><img id="logo" src="./imgs/aloha-logo.svg" alt="logo" width="100"></a>  
+
+            <nav class="desktop-only">
+                <ul>
+                    <li> <a href="#landing-statement">ABOUT</a> </li> 
+                    <li> <a href="#categories">SHOP</a> </li> 
+                    <li> <a href="#swipe">FEATURES</a> </li> 
+                    <li> <a href="#subscribe">UPDATES</a> </li> 
+                </ul>
+            </nav>
+
+            <a href="#"><img id="cart" src="./imgs/cart-icon.svg" alt="cart" width="30"></a>
+        </div>
+        
+
+        <!--For device to use flexbox-->
+        <nav class="device-only">
             <ul>
                 <li> <a href="#landing-statement">ABOUT</a> </li> 
                 <li> <a href="#categories">SHOP</a> </li> 
                 <li> <a href="#swipe">FEATURES</a> </li> 
                 <li> <a href="#subscribe">UPDATES</a> </li> 
             </ul>
-        </nav>   
+        </nav>
     </header>
     
     <!--hero banner-->    
@@ -51,12 +66,12 @@
     <section id="categories">
         <div class="row">
             <div class="category-image wide-image" style="background-image:url('./imgs/mens-category.jpg');"><p>men's</p></div>
-            <div class="category-image box-image" style="background-image:url('./imgs/trends-category.jpg');margin: 0 10px;"><p>trends</p></div>
+            <div class="category-image box-image" style="background-image:url('./imgs/trends-category.jpg');"><p>trends</p></div>
             <div class="category-image box-image" style="background-image:url('./imgs/glasses-category.jpg');"><p>glasses</p></div>
         </div>
         <div class="row">
             <div class="category-image box-image" style="background-image:url('./imgs/sale-category.jpg');"><p>sale</p></div>
-            <div class="category-image box-image" style="background-image:url('./imgs/bags-category.jpg');margin: 0 10px;"><p>bags</p></div>
+            <div class="category-image box-image" style="background-image:url('./imgs/bags-category.jpg');"><p>bags</p></div>
             <div class="clearfix device-only"></div>
             <div class="category-image wide-image" style="background-image:url('./imgs/womens-category.jpg');"><p>woman's</p></div>
         </div>
@@ -105,8 +120,8 @@
     <section id="subscribe">
         <h3>Sign-up for <span>Updates</span></h3>
         <p>
-            stay updated on our latest product releases, be first to find out about<br>upcoming sales and get 
-            free style tips from our blog. Unsescribe at any time.
+            stay updated on our latest product releases, be first to find out about upcoming sales and get 
+            free style tips from our blog. Unsubscribe at any time.
         </p>
         <div class="subscribe-email">
             <input id="email" type="text" placeholder="your email">
@@ -130,7 +145,6 @@
             <p class="fab fa-pinterest"><span>Pinterest</span></p>
             <p class="fab fa-google-plus-g"><span>google</span></p>
         </div>
-        <div class="clearfix"></div>
     </footer>
     
     <!--j query below above javescript--> 
